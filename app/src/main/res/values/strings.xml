@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">DATOS</string>
+    <string name="nombre">Nombre: </string>
+    <string name="direccion">Dirección: </string>
+    <string name="telefono">Teléfono: </string>
+    <string name="titulo">Ingresa Datos</string>
+    <string name="titulo2">Confirma Datos</string>
+    <string name="calendario">Calendario</string>
+    <string name="fecha">Fecha</string>
+    <string name="enviar">Enviar</string>
+    <string name="editar">Editar</string>
+</resources>
