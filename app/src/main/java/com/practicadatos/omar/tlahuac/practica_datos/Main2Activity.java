@@ -9,7 +9,7 @@ import android.widget.TextView;
 
 public class Main2Activity extends AppCompatActivity implements View.OnClickListener {
     TextView txtnombre, txtdireccion, txttel, txtfecha;
-    private Button btneditar;
+    private Button btneditar, btnenviar;
 
 
     @Override
@@ -24,6 +24,10 @@ public class Main2Activity extends AppCompatActivity implements View.OnClickList
 
         btneditar = (Button) findViewById(R.id.btneditar);
         btneditar.setOnClickListener(this);
+
+        btnenviar = (Button) findViewById(R.id.btnenviar);
+        btnenviar.setOnClickListener(this);
+
 
         Intent intent = getIntent();
         Bundle extras = intent.getExtras();
@@ -40,14 +44,18 @@ public class Main2Activity extends AppCompatActivity implements View.OnClickList
         }
     }
 
-    public void Onclick(View view) {
-        Intent i;
-        i = new Intent(this, Main3Activity.class);
-        startActivity(i);
-    }
+   /* public void Onclick(View view) {
+
+    }*/
 
     @Override
     public void onClick(View v) {
-        onBackPressed();
+        if (v == btneditar){
+            onBackPressed();
+        }else if(v == btnenviar){
+            Intent i;
+            i = new Intent(this, Main3Activity.class);
+            startActivity(i);
+        }
     }
 }
