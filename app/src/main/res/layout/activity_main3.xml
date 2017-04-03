@@ -4,25 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/andy_devel"
     tools:context="com.practicadatos.omar.tlahuac.practica_datos.Main3Activity">
 
     <TextView
-        android:id="@+id/textView"
-        android:layout_width="424dp"
-        android:layout_height="584dp"
-        android:background="@drawable/andy_devel"
-        android:text=""
-        tools:layout_editor_absoluteX="-20dp"
-        tools:layout_editor_absoluteY="-75dp" />
-
-    <TextView
         android:id="@+id/textView2"
-        android:layout_width="306dp"
-        android:layout_height="92dp"
-        android:textSize="60dp"
-        android:textColor="#fff"
+        android:layout_marginTop="180dp"
+        android:layout_marginLeft="100dp"
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
         android:text="Bienvenido"
-        tools:layout_editor_absoluteX="41dp"
-        tools:layout_editor_absoluteY="129dp" />
+        android:textColor="#fff"
+        android:textSize="30dp"
+        tools:layout_editor_absoluteY="180dp"
+        tools:layout_editor_absoluteX="100dp" />
 
 </android.support.constraint.ConstraintLayout>
